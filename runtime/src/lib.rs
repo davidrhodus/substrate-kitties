@@ -148,7 +148,7 @@ parameter_types! {
 
 // Configure Kitties pallet
 impl pallet_kitties::Config for Runtime {
-
+	type Event = Event;
 }
 
 // Configure FRAME pallets to include in runtime.
@@ -292,7 +292,7 @@ construct_runtime!(
 		Sudo: pallet_sudo::{Module, Call, Config<T>, Storage, Event<T>},
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template::{Module, Call, Storage, Event<T>},
-		Kitties: pallet_kitties::{Module},
+		Kitties: pallet_kitties::{Module, Storage, Call, Event<T>},
 	}
 );
 

@@ -1,0 +1,1 @@
+Crypto Kitties on a Substrate chain
