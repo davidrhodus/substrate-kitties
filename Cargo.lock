@@ -3801,9 +3801,8 @@ dependencies = [
 
 [[package]]
 name = "pallet-kitties"
-version = "3.0.0"
+version = "0.1.0"
 dependencies = [
- "frame-benchmarking",
  "frame-support",
  "frame-system",
  "parity-scale-codec",
