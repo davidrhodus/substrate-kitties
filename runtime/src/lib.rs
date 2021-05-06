@@ -146,6 +146,11 @@ parameter_types! {
 	pub const SS58Prefix: u8 = 42;
 }
 
+// Configure Kitties pallet
+impl pallet_kitties::Config for Runtime {
+
+}
+
 // Configure FRAME pallets to include in runtime.
 
 impl frame_system::Config for Runtime {
@@ -287,6 +292,7 @@ construct_runtime!(
 		Sudo: pallet_sudo::{Module, Call, Config<T>, Storage, Event<T>},
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template::{Module, Call, Storage, Event<T>},
+		Kitties: pallet_kitties::{Module},
 	}
 );
 
