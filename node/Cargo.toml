@@ -1,12 +1,12 @@
 [package]
-authors = ['Substrate DevHub <https://github.com/substrate-developer-hub>']
+authors = ['David Rhodus']
 build = 'build.rs'
-description = 'A fresh FRAME-based Substrate node, ready for hacking.'
+description = 'A FRAME-based Substrate node, NFT and communication features.'
 edition = '2018'
-homepage = 'https://substrate.dev'
+homepage = 'http://vacovideo.com'
 license = 'Unlicense'
-name = 'node-template'
-repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
+name = 'substrate-kitties'
+repository = 'https://github.com/davidrhodus/substrate-kitties/'
 version = '3.0.0'
 
 [[bin]]
